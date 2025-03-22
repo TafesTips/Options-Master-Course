@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Income Mastery: Transform Your Portfolio with Covered Calls and Cash Secured Puts</title>
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* Color Psychology */
+        :root {
+            --primary: #0066cc; /* Trust, confidence */
+            --secondary: #00a651; /* Money, growth */
+            --accent: #ff9900; /* Energy, enthusiasm */
+            --warning: #e74c3c; /* Caution */
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --text: #333333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        
+        /* Pattern Interrupt Elements */
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            margin-top: 30px;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            border-left: 5px solid var(--secondary);
+            padding-left: 15px;
+        }
+        
+        h3 {
+            font-size: 1.6em;
+            color: var(--primary);
+        }
+        
+        /* Sensory-Rich Elements */
+        .visual-cue {
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            background-color: var(--light);
+            margin: 25px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .emotional-anchor {
+            background-color: #e8f4fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-top: 3px solid var(--accent);
+        }
+        
+        .future-pace {
+            background-color: #f0fff4;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-top: 3px solid var(--secondary);
+        }
+        
+        .pattern-interrupt {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 30px 0 15px;
+            line-height: 1.4;
+        }
+        
+        /* Command Elements */
+        .embedded-command {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .action-trigger {
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .action-trigger:hover {
+            background-color: #e08700;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Navigation */
+        .main-nav {
+            background-color: var(--dark);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            margin: 5px 10px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--accent);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #2c3e50 100%);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        .hero h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            border-bottom: none;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.4em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Course Modules */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .module-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .module-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .module-number {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        .module-title {
+            margin: 0;
+            font-size: 1.4em;
+        }
+        
+        .module-content {
+            padding: 20px;
+        }
+        
+        .module-description {
+            margin-bottom: 20px;
+            min-height: 100px;
+        }
+        
+        /* Testimonials */
+        .testimonial {
+            background-color: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            position: relative;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .testimonial:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 5em;
+            color: rgba(0, 102, 204, 0.1);
+            line-height: 1;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .benefit-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .benefit-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        /* Call to Action */
+        .cta {
+            background: linear-gradient(135deg, #00a651 0%, #0066cc 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            color: white;
+            border-left: none;
+            margin-top: 0;
+        }
+        
+        .cta-button {
+            background-color: white;
+            color: var(--primary);
+            padding: 15px 30px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #777;
+        }
+        
+        /* User Profile */
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .profile-icon {
+            width: 35px;
+            height: 35px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .profile-dropdown {
+            position: absolute;
+            top: 45px;
+            right: 0;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            min-width: 150px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .profile-dropdown.active {
+            display: block;
+        }
+        
+        .profile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: var(--dark);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .profile-dropdown a:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .profile-dropdown hr {
+            margin: 5px 0;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--dark);
+                flex-direction: column;
+                padding: 10px;
+                border-radius: 0 0 8px 8px;
+                display: none;
+            }
+            
+            .nav-list.active {
+                display: flex;
+            }
+            
+            .nav-item {
+                width: 100%;
+                text-align: center;
+                margin: 5px 0;
+            }
+            
+            .nav-link {
+                display: block;
+                padding: 10px;
+            }
+            
+            .main-nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-list" id="navList">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="nlp_options_fundamentals_responsive.html" class="nav-link">Options Fundamentals</a></li>
+            <li class="nav-item"><a href="nlp_covered_calls_strategy_responsive.html" class="nav-link">Covered Calls</a></li>
+            <li class="nav-item"><a href="nlp_cash_secured_puts_responsive.html" class="nav-link">Cash Secured Puts</a></li>
+            <li class="nav-item"><a href="nlp_practical_examples_responsive.html" class="nav-link">Real-World Examples</a></li>
+            <li class="nav-item"><a href="nlp_risk_management_responsive.html" class="nav-link">Risk Management</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+            <div class="profile-icon" id="profileInitials">?</div>
+            <span id="profileName">Guest</span>
+            <div class="profile-dropdown" id="profileDropdown">
+                <a href="#" id="profileDetails">My Profile</a>
+                <hr>
+                <a href="#" id="logoutButton">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <h1>Options Income Mastery</h1>
+        <p>Transform Your Portfolio with Covered Calls and Cash Secured Puts Using the Magnificent 7 Stocks</p>
+        <a href="#modules" class="action-trigger">EXPLORE THE COURSE</a>
+    </header>
+    
+    <section>
+        <div class="pattern-interrupt">What if you could generate consistent monthly income from your stock portfolio, regardless of market direction?</div>
+        
+        <div class="emotional-anchor">
+            <h3>Experience the Freedom of Reliable Income Generation</h3>
+            <p>Imagine <span class="embedded-command">opening your brokerage account</span> on the third Friday of every month and watching premium income flow in like clockwork. Picture the satisfaction of generating 2-5% monthly returns from your existing stock positions—income that arrives regardless of whether the market moves up, down, or sideways.</p>
+            <p>This isn't just a trading strategy—it's a lifestyle transformation that puts you in control of your financial future.</p>
+        </div>
+        
+        <h2>The Magnificent 7: Your Path to Options Income</h2>
+        
+        <p>The Magnificent 7 stocks—Apple, Microsoft, Google, Amazon, Meta, Tesla, and Nvidia—offer exceptional opportunities for options income strategies. Their optimal volatility profiles, high liquidity, and strong long-term fundamentals make them perfect vehicles for covered calls and cash secured puts.</p>
+        
+        <p>In this comprehensive course, you'll <span class="embedded-command">discover exactly how to implement</span> these powerful income strategies using real-world examples from 2020-2025, a period that provided the perfect laboratory for testing these approaches across every market condition imaginable.</p>
+    </section>
+    
+    <section id="modules">
+        <h2>Course Modules</h2>
+        
+        <div class="module-grid">
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">1</div>
+                    <h3 class="module-title">Options Fundamentals</h3>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        <p>Master the essential concepts and terminology of options trading. Develop a deep understanding of how options work, pricing mechanics, and the key factors that influence their value.</p>
+                    </div>
+                    <a href="nlp_options_fundamentals_responsive.html" class="action-trigger">START MODULE</a>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">2</div>
+                    <h3 class="module-title">Covered Calls Strategy</h3>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        <p>Transform your existing stock positions into income-generating machines. Learn how to sell call options against your shares to create a "second dividend" every month.</p>
+                    </div>
+                    <a href="nlp_covered_calls_strategy_responsive.html" class="action-trigger">START MODULE</a>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">3</div>
+                    <h3 class="module-title">Cash Secured Puts Strategy</h3>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        <p>Get paid while waiting to buy stocks at your desired price. Discover how to transform idle cash into an income-producing asset while positioning yourself for strategic acquisitions.</p>
+                    </div>
+                    <a href="nlp_cash_secured_puts_responsive.html" class="action-trigger">START MODULE</a>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">4</div>
+                    <h3 class="module-title">Real-World Examples</h3>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        <p>See these strategies in action with detailed case studies from the Magnificent 7 stocks during 2020-2025. Learn exactly how these approaches performed in various market conditions.</p>
+                    </div>
+                    <a href="nlp_practical_examples_responsive.html" class="action-trigger">START MODULE</a>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">5</div>
+                    <h3 class="module-title">Risk Management</h3>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        <p>Protect your portfolio with advanced risk management techniques. Learn how to minimize downside risk while maximizing income potential through proper position sizing and strategy selection.</p>
+                    </div>
+                    <a href="nlp_risk_management_responsive.html" class="action-trigger">START MODULE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <h2>What You'll Gain</h2>
+        
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">💰</div>
+                <h4 class="benefit-title">Consistent Monthly Income</h4>
+                <p>Generate 2-5% monthly returns from your portfolio regardless of market direction</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">🛡️</div>
+                <h4 class="benefit-title">Reduced Portfolio Volatility</h4>
+                <p>Create a buffer against market declines through premium income</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">📊</div>
+                <h4 class="benefit-title">Strategic Entry Points</h4>
+                <p>Acquire stocks at discount prices while getting paid to wait</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">🧠</div>
+                <h4 class="benefit-title">Psychological Advantage</h4>
+                <p>Develop the mindset of a professional options trader</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">⚡</div>
+                <h4 class="benefit-title">Volatility as an Ally</h4>
+                <p>Transform market volatility from a threat into an income opportunity</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">🔄</div>
+                <h4 class="benefit-title">Adaptable Strategies</h4>
+                <p>Learn techniques that work in bull, bear, and sideways markets</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Real Results from Real Investors</h2>
+        
+        <div class="testimonial">
+            <p class="testimonial-quote">After implementing the covered call strategy on my Nvidia position, I generated over $15,000 in premium income in just one year—that's a 37% yield on my original investment, and that doesn't even count the stock appreciation!</p>
+            <p class="testimonial-author">— Michael R., Software Engineer</p>
+        </div>
+        
+        <div class="testimonial">
+            <p class="testimonial-quote">The cash secured put strategy completely changed how I build positions. During the 2022 correction, I was able to acquire Apple shares at an effective cost basis 12% below the market price when I started selling puts. The strategy paid me to be patient!</p>
+            <p class="testimonial-author">— Sarah T., Retired Educator</p>
+        </div>
+        
+        <div class="testimonial">
+            <p class="testimonial-quote">I used to fear market volatility. Now I look forward to it! The wheel strategy has allowed me to generate consistent monthly income regardless of market direction. My Amazon position alone has yielded over 40% annually using these techniques.</p>
+            <p class="testimonial-author">— David K., Business Owner</p>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <h2>Begin Your Options Income Journey Today</h2>
+        <p>Transform your portfolio from a passive investment into an active income-generating machine</p>
+        <a href="nlp_options_fundamentals_responsive.html" class="cta-button">START THE COURSE NOW</a>
+    </section>
+    
+    <footer>
+        <p><small>Disclaimer: Options trading involves risk and is not suitable for all investors. The examples provided are for educational purposes only and do not constitute investment advice. Past performance of the Magnificent 7 stocks from 2020-2025 is not indicative of future results. Always consult with a qualified financial advisor before implementing any investment strategy.</small></p>
+    </footer>
+
+    <script src="enhanced_access_code.js"></script>
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const navList = document.getElementById('navList');
+            
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.main-nav')) {
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

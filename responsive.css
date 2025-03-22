@@ -1,0 +1,268 @@
+/* Responsive design styles for authentication layers */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #0066cc;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.auth-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+    background-color: #004c99;
+    transform: translateY(-2px);
+}
+
+.auth-button:active {
+    transform: translateY(0);
+}
+
+.welcome-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00a651;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.welcome-toast.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Enhanced responsive design for course content */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+    }
+    
+    .nav-item {
+        margin: 3px 0;
+        width: 100%;
+    }
+    
+    .nav-link {
+        display: block;
+        text-align: center;
+    }
+    
+    .hero {
+        padding: 30px 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    
+    .hero p {
+        font-size: 1.1em;
+    }
+    
+    .action-trigger {
+        display: block;
+        text-align: center;
+    }
+    
+    .case-study {
+        padding: 15px;
+    }
+    
+    .trade-details {
+        flex-direction: column;
+    }
+    
+    .trade-detail-card {
+        margin-bottom: 10px;
+    }
+    
+    .auth-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .pattern-interrupt {
+        font-size: 1.1em;
+    }
+    
+    .auth-container h2 {
+        font-size: 1.5em;
+    }
+    
+    .input-group input {
+        padding: 10px;
+    }
+    
+    .auth-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .module-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .auth-container {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .hero {
+        padding: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    
+    .hero p {
+        margin-bottom: 15px;
+    }
+}
